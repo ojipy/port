@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+
+<div class="container" style="text-align:center;">
+
+<form action="{{url_for('edit')}}" method="POST">
+
+    <font size="-1">WORDPRESSのテキストモードから記事の内容をコピー&ペーストしてください。</font>
+    <br>
+    <textarea placeholder="SOURCE CODE"　class="form-controll" name="article" type="text" cols="100" rows="20"></textarea>
+    
+    <p><button type="submit" class="btn btn-outline-primary">submit</button></p>
+
+</form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログインページ</title>
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.j')}}"></script>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 10px 3%;">
+        <a class="navbar-brand" href="{{url_for('form')}}">TEST PAGE</a>
+    </nav>
+    
+</head>
+<br>
+<body>
+
+<div class="container">
+
+    <form action="{{url_for('login')}}" method=post>
+        <div class="form-group">
+            <label for="InputTitle">ユーザー名</label>
+            <input type="text" class="form-control" id="InputTitle" name="username">
+        </div>
+        <div class="form-group">
+            <label for="InputPassword">パスワード</label>
+            <input type="password" class="form-control" id="InputPassword" name="password">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-primary" style="float:right;">ログイン</button>
+    </form>
+
+</div>
+
+</body>
+
+</html>

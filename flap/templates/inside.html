@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>h2タイトル</th>
+        <th>サジェスト</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>h2タイトル</td>
+        <td>
+            <table class="table">
+                <tr>
+                    <td>hoge</td>
+                    <td>foo</td>
+                    <td>bar</td>
+                    <td>baz</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>300</td>
+                    <td>200</td>
+                    <td>100</td>
+                </tr>
+            </table>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>h2タイトル</td>
+        <td>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>hoge</td>
+                        <td>foo</td>
+                        <td>bar</td>
+                        <td>baz</td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>400</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>h2タイトル</td>
+        <td>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>hoge</td>
+                        <td>foo</td>
+                        <td>bar</td>
+                        <td>baz</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>300</td>
+                        <td>500</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+
+
+{% endblock %}
